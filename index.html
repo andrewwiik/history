@@ -1,112 +1,346 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
 
-		<title>James Madison</title>
-		<link href='http://fonts.googleapis.com/css?family=Euphoria+Script' rel='stylesheet' type='text/css'>
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Andrew Wiik">
+  <title>James Madison</title>
+  <link href='http://fonts.googleapis.com/css?family=Euphoria+Script' rel='stylesheet' type='text/css'>
+  <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+  <meta name="author" content="Andrew Wiik">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/black.css" id="theme">
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    			link.rel = 'stylesheet';
+    			link.type = 'text/css';
+    			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    			document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
 
-		<!--[if lt IE 9]>
+  <!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
-		<style>
-		.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {text-transform: none;}
-		</style>
-	</head>
+  <style>
+    .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {text-transform: none;}
+  </style>
+</head>
 
-	<body>
+<body>
 
-		<div class="reveal">
+  <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section >
-					<h1 style="font-family: 'Euphoria Script', cursive;">James Madison</h1>
-					<h3>4th President of the United States</h3>
-					<p>
-						<small>Created by Robert Nelson, Paul Wenzel, and Andrew Wiik</small>
-					</p>
-				</section>
-				<section data-color="white" data-background-transition="concave">
-				<section>
-					<h2>Quotes by James Madison</h2>
-				</section>
-				<section><blockquote>"War ... should only be declared by the authority of the people, whose toils and treasures are to support its burdens, instead of the government which is to reap its fruits."</blockquote></section>
-				<section><blockquote>"Liberty may be endangered by the abuse of liberty, but also by the abuse of power."
-</blockquote></section>
-<section><blockquote>"The truth is that all men having power ought to be mistrusted."</blockquote>
-</section>
-</section>
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+      <section>
+        <h1 style="font-family: 'Euphoria Script', cursive;">James Madison</h1>
+        <h3>4th President of the United States</h3>
+        <p>
+          <small>Created by Robert Nelson, Paul Wenzel, and Andrew Wiik</small>
+        </p>
+      </section>
+      <section data-color="white" data-background-transition="concave">
+        <section>
+          <h2>Quotes by James Madison</h2>
+        </section>
+        <section>
+          <blockquote>"War ... should only be declared by the authority of the people, whose toils and treasures are to support its burdens, instead of the government which is to reap its fruits."</blockquote>
+        </section>
+        <section>
+          <blockquote>"Liberty may be endangered by the abuse of liberty, but also by the abuse of power."
+          </blockquote>
+        </section>
+        <section>
+          <blockquote>"The truth is that all men having power ought to be mistrusted."</blockquote>
+        </section>
+      </section>
+      <section data-audio-src="theme.mp3">
+        <h2>Our Theme Song</h2>
+      </section>
+      <section>
+      <style scoped>
+      /* -------------------------------------
+ * For horizontal version, set the
+ * $vertical variable to false
+ * ------------------------------------- */
+/* -------------------------------------
+ * General Style
+ * ------------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+body {
+  margin: 0;
+  padding: 0 5%;
+  font-size: 100%;
+  font-family: "Noto Sans", sans-serif;
+  color: #eee9dc;
+  background: #48b379;
+}
 
+h2 {
+  margin: 3em 0 0 0;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
 
-				<!-- Example of nested vertical slides -->
-				<section data-audio-src="theme.mp3">
-				<h2>Our Theme Song</h2>
-				</section>
+/* -------------------------------------
+ * timeline
+ * ------------------------------------- */
+#timeline {
+  list-style: none;
+  margin: 120px 0 0;
+  padding: 0;
+  border-top: 8px solid #eee9dc;
+  display: table;
+  border-spacing: 30px 0;
+}
+#timeline li {
+  display: table-cell;
+}
+#timeline li .relative {
+  position: relative;
+}
+#timeline p {
+  margin: 0 0 15px;
+}
 
-			</div>
+.date {
+  text-align: center;
+  top: -55px;
+  left: 0;
+  right: 0;
+  font-size: 0.95em;
+  line-height: 20px;
+  position: absolute;
+}
 
-		</div>
+.circle {
+  margin: 0 auto;
+  top: -14px;
+  left: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  background: #48b379;
+  border: 5px solid #eee9dc;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+}
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
-		<script>
+.content {
+  width: 200px;
+  max-height: 0;
+  margin-top: 40px;
+  vertical-align: top;
+  padding: 50px 15px 15px;
+  transition: width 0.4s linear, max-height 0.4s linear;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.5em;
+  position: relative;
+}
+.content:before, .content:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  position: absolute;
+  pointer-events: none;
+  bottom: 100%;
+}
+.content:before {
+  border-bottom-color: inherit;
+  border-width: 15px;
+  left: 50%;
+  margin-left: -15px;
+}
+.content:after {
+  border-bottom-color: #48b379;
+  border-width: 12px;
+  left: 50%;
+  margin-left: -12px;
+}
+.content p {
+  max-height: 0;
+  color: transparent;
+  text-align: justify;
+  word-break: break-word;
+  hyphens: auto;
+  overflow: hidden;
+}
 
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				// Parallax background image
+label {
+  font-size: 1.3em;
+  position: absolute;
+  z-index: 100;
+  cursor: pointer;
+  width: 200px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+  top: 60px;
+  left: 15px;
+}
 
-    // This slide transition gives best results:
-    transition: 'slide',
-				controls: true,
-				progress: false,
-				history: true,
-				center: true,
-				audioPrefix: 'audio/',    // audio files are stored in the "audio" folder
-	audioSuffix: '.mp3',	  // audio files have the ".ogg" ending
-	audioTextToSpeechURL: "http://tts-api.com/tts.mp3?q=",  // text is added to this URL 
-	audioDefaultDuration: 0,  // default duration if no audio is available
-	audioPlayerOpacity: 0.01, // opacity value of audio player if unfocused
+.radio {
+  display: none;
+}
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+.radio:checked + .relative label {
+  cursor: auto;
+  width: 400px;
+  transition: width 0.3s linear 0.2s;
+}
+.radio:checked + .relative .circle {
+  background: #f98262;
+}
+.radio:checked ~ .content {
+  max-height: 180px;
+  border-color: #eee9dc;
+  width: 400px;
+}
+.radio:checked ~ .content p {
+  max-height: 200px;
+  color: #eee9dc;
+  transition: color 0.3s linear 0.3s;
+}
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/audio-slideshow/audio-slideshow.js', condition: function( ) { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
+/* -------------------------------------
+ * mobile phones (vertical version only)
+ * ------------------------------------- */
+</style>
+<html>
+<bodY>
+<h2>CSS3 Timeline</h2>
+<p>Please set the $vertical variable to false to see the horizontal version.</p>
+<ul id='timeline'>
+  <li class='work'>
+    <input class='radio' id='work5' name='works' type='radio' checked>
+    <div class="relative">
+      <label for='work5'>Lorem ipsum dolor sit amet</label>
+      <span class='date'>12 May 2013</span>
+      <span class='circle'></span>
+    </div>
+    <div class='content'>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam qui laborum
+        non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.
+      </p>
+    </div>
+  </li>
+  <li class='work'>
+    <input class='radio' id='work4' name='works' type='radio'>
+    <div class="relative">
+      <label for='work4'>Lorem ipsum dolor sit amet</label>
+      <span class='date'>11 May 2013</span>
+      <span class='circle'></span>
+    </div>
+    <div class='content'>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam qui laborum
+        non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.
+      </p>
+    </div>
+  </li>
+  <li class='work'>
+    <input class='radio' id='work3' name='works' type='radio'>
+    <div class="relative">
+      <label for='work3'>Lorem ipsum dolor sit amet</label>
+      <span class='date'>10 May 2013</span>
+      <span class='circle'></span>
+    </div>
+    <div class='content'>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam qui laborum
+        non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.
+      </p>
+    </div>
+  </li>
+  <li class='work'>
+    <input class='radio' id='work2' name='works' type='radio'>
+    <div class="relative">
+      <label for='work2'>Lorem ipsum dolor sit amet</label>
+      <span class='date'>09 May 2013</span>
+      <span class='circle'></span>
+    </div>
+    <div class='content'>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam qui laborum
+        non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.
+      </p>
+    </div>
+  </li>
+  <li class='work'>
+    <input class='radio' id='work1' name='works' type='radio'>
+    <div class="relative">
+      <label for='work1'>Lorem ipsum dolor sit amet</label>
+      <span class='date'>08 May 2013</span>
+      <span class='circle'></span>
+    </div>
+    <div class='content'>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! Molestiae officiis voluptate excepturi rem veritatis eum aliquam qui laborum
+        non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.
+      </p>
+    </div>
+  </li>
+</ul>
+</bodY>
+</html>
+      </section>
 
-		</script>
+    </div>
 
-	</body>
+  </div>
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+  <script>
+    // Full list of configuration options available at:
+    			// https://github.com/hakimel/reveal.js#configuration
+    			Reveal.initialize({
+    				// Parallax background image
+    
+        // This slide transition gives best results:
+        transition: 'slide',
+    				controls: true,
+    				progress: false,
+    				history: true,
+    				center: true,
+    				audioPrefix: 'audio/',    // audio files are stored in the "audio" folder
+    	audioSuffix: '.mp3',	  // audio files have the ".ogg" ending
+    	audioTextToSpeechURL: "http://tts-api.com/tts.mp3?q=",  // text is added to this URL 
+    	audioDefaultDuration: 0,  // default duration if no audio is available
+    	audioPlayerOpacity: 0.01, // opacity value of audio player if unfocused
+    
+    				transition: 'slide', // none/fade/slide/convex/concave/zoom
+    
+    				// Optional reveal.js plugins
+    				dependencies: [
+    					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+    					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+    					{ src: 'plugin/zoom-js/zoom.js', async: true },
+    					{ src: 'plugin/audio-slideshow/audio-slideshow.js', condition: function( ) { return !!document.body.classList; } },
+    					{ src: 'plugin/notes/notes.js', async: true }
+    				]
+    			});
+  </script>
+
+</body>
+
 </html>

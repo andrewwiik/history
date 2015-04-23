@@ -213,6 +213,8 @@ label {
     margin-left: 0;
     padding-left: 0;
     border-left: none;
+    overflow-y:visible;
+    height:100vh;
   }
   #timeline li {
     margin: 50px 0;
@@ -261,8 +263,6 @@ label {
 }
 
       </style>
-      <h2>CSS3 Timeline</h2>
-<p>Please set the $vertical variable to false to see the horizontal version.</p>
 <section>
 <ul id='timeline'>
   <li class='work'>
@@ -283,7 +283,7 @@ label {
 </section>
 <section>
  <li class='work'>
-    <input class='radio' id='work4' name='works' type='radio'>
+    <input class='radio' id='work4' name='works' type='radio' checked>
     <div class="relative">
       <label for='work4'>Lorem ipsum dolor sit amet</label>
       <span class='date'>11 May 2013</span>

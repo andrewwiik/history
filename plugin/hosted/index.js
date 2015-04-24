@@ -5,16 +5,13 @@ var crypto		= require('crypto');
 var app			= express.createServer();
 var staticDir	= express.static;
 var io			= io.listen(app);
-
 var opts = {
-	port: process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 1948,
+  port: process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 1948,
   ipAddr : process.env.IP_ADDR || process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1',
   web_host: process.env.REVEAL_WEB_HOST || process.env.OPENSHIFT_APP_DNS || 'localhost:1948',
   socket_host: process.env.REVEAL_SOCKET_HOST || process.env.OPENSHIFT_APP_DNS || 'localhost',
-  socket_secret : process.env.REVEAL_SOCKET_SECRET,
-	baseDir : __dirname + '/../../'
+  socket_secret : process.env.REVEAL_SOCKET_SECRET
 };
-
 var createHash = function(secret) {
 	var cipher = crypto.createCipher('blowfish', secret);
 	return(cipher.final('hex'));
@@ -97,13 +94,5 @@ var brown = '\033[33m',
 
 console.log( brown + "reveal.js:" + reset + " Multiplex running on port " + green + opts.port + reset );
 
-
-var opts = {
-  port: process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 1948,
-  ipAddr : process.env.IP_ADDR || process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1',
-  web_host: process.env.REVEAL_WEB_HOST || process.env.OPENSHIFT_APP_DNS || 'localhost:1948',
-  socket_host: process.env.REVEAL_SOCKET_HOST || process.env.OPENSHIFT_APP_DNS || 'localhost',
-  socket_secret : process.env.REVEAL_SOCKET_SECRET
-};
 
 

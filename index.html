@@ -104,9 +104,13 @@
     // Full list of configuration options available at:
     			// https://github.com/hakimel/reveal.js#configuration
     			Reveal.initialize({
-    				// Parallax background image
-    
-        // This slide transition gives best results:
+            multiplex: {
+        // Example values. To generate your own, see the socket.io server instructions.
+        secret: null, // null so the clients do not have control of the master presentation
+        id: '92b7c4e2b76bbd3c', // id, obtained from socket.io server
+        url: 'revealjs.jit.su:80' // Location of socket.io server
+    },
+
         transition: 'slide',
         mouseWheel: true,
     
@@ -120,6 +124,8 @@
     					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
     					{ src: 'plugin/zoom-js/zoom.js', async: true },
     					{ src: 'plugin/notes/notes.js', async: true }
+               { src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js', async: true },
+              { src: 'plugin/multiplex/client.js', async: true }
     				]
     			});
   </script>

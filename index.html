@@ -64,7 +64,8 @@
           <blockquote>"The truth is that all men having power ought to be mistrusted."</blockquote>
         </section>
       </section>
-      <section data-audio-src="theme.mp3">
+      <section>
+      <audio data-autoplay src="theme.mp3"></audio>
         <h2>Our Theme Song</h2>
       </section>
       <section>
@@ -79,7 +80,7 @@
         </h3>
         </section>
         <section>
-          <h3>signed Macon’s Bill Number Two into law in 1810.This law essentially set the stage for the War of 1812. Due to increasing disregard for U.S. neutrality in the French-British conflict and a call for military action from new members of Congress.
+          <h3>He signed Macon’s Bill Number Two into law in 1810.This law essentially set the stage for the War of 1812. Due to increasing disregard for U.S. neutrality in the French-British conflict and a call for military action from new members of Congress.
 </h3>
         </section>
         <section><h3>He lead the United States in the war of 1812 against Great Britain and after he served two terms he retired from his presidency and moved back to his plantation in Virginia.</h3>
@@ -103,15 +104,6 @@
     
         // This slide transition gives best results:
         transition: 'slide',
-    				controls: true,
-    				progress: false,
-    				history: true,
-    				center: true,
-    				audioPrefix: 'audio/',    // audio files are stored in the "audio" folder
-    	audioSuffix: '.mp3',	  // audio files have the ".ogg" ending
-    	audioTextToSpeechURL: "http://tts-api.com/tts.mp3?q=",  // text is added to this URL 
-    	audioDefaultDuration: 0,  // default duration if no audio is available
-    	audioPlayerOpacity: 0.01, // opacity value of audio player if unfocused
     
     				transition: 'slide', // none/fade/slide/convex/concave/zoom
     
@@ -122,7 +114,6 @@
     					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
     					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
     					{ src: 'plugin/zoom-js/zoom.js', async: true },
-    					{ src: 'plugin/audio-slideshow/audio-slideshow.js', condition: function( ) { return !!document.body.classList; } },
     					{ src: 'plugin/notes/notes.js', async: true }
     				]
     			});

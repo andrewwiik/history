@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>James Madison</title>
+  <link href='http://fonts.googleapis.com/css?family=Euphoria+Script' rel='stylesheet' type='text/css'>
+  <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+  <meta name="author" content="Andrew Wiik">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    			link.rel = 'stylesheet';
+    			link.type = 'text/css';
+    			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    			document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+  <style>
+    .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {text-transform: none;}
+  </style>
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+      <section>
+      <aside class="notes">
+      James Madison was the 4th President of the United States, He was born in Virigina...  joking, you guys don't wanna hear that kind of boring biography do you?, I didn't think so..
+      </aside>
+      <audio data-autoplay src="audio/open.mp3"></audio>
+        <h1 style="font-family: 'Euphoria Script', cursive;">James Madison</h1>
+        <h3>4th President of the United States</h3>
+        <p>
+          <small>Created by Robert Nelson, Paul Wenzel, and Andrew Wiik</small>
+        </p>
+      </section>
+      <section data-color="white" data-background-transition="concave">
+        <section>
+          <h2>Quotes by James Madison</h2>
+        </section>
+        <section>
+          <blockquote>"War ... should only be declared by the authority of the people, whose toils and treasures are to support its burdens, instead of the government which is to reap its fruits."</blockquote>
+        </section>
+        <section>
+          <blockquote>"Liberty may be endangered by the abuse of liberty, but also by the abuse of power."
+          </blockquote>
+        </section>
+        <section>
+          <blockquote>"The truth is that all men having power ought to be mistrusted."</blockquote>
+        </section>
+      </section>
+      <section>
+      <audio data-autoplay src="audio/theme.mp3"></audio>
+        <h2>Our Theme Song</h2>
+      </section>
+      <section>
+        <section>
+        <h2>Things you should really know about Jmaes Madison</h2>
+        </section>
+        <section>
+         <h3>He was the father of the constitution.</h3>
+        </section>
+        <section>
+        <h3>was elected to the newly formed U.S. House of Representatives, where he served from 1789 to 1797. In Congress, he worked to draft the Bill of Rights.
+        </h3>
+        </section>
+        <section>
+          <h3>He signed Macon’s Bill Number Two into law in 1810.This law essentially set the stage for the War of 1812. Due to increasing disregard for U.S. neutrality in the French-British conflict and a call for military action from new members of Congress.
+</h3>
+        </section>
+        <section><h3>He lead the United States in the war of 1812 against Great Britain and after he served two terms he retired from his presidency and moved back to his plantation in Virginia.</h3>
+</section>
+<section>
+  <h3>Louisiana (1812) and Kentucky (1816) joined the United States while He was in office.</h3>
+</section>
+      </section>
+
+    </div>
+
+  </div>
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+  <script>
+    // Full list of configuration options available at:
+    			// https://github.com/hakimel/reveal.js#configuration
+    			Reveal.initialize({
+            multiplex: {
+        // Example values. To generate your own, see the socket.io server instructions.
+        secret: null // null so the clients do not have control of the master presentation'
+        id: '92b7c4e2b76bbd3c', // id, obtained from socket.io server
+        url: 'revealjs.jit.su:80' // Location of socket.io server
+    },
+
+        transition: 'slide',
+        mouseWheel: true,
+    
+    				transition: 'slide', // none/fade/slide/convex/concave/zoom
+    
+    				// Optional reveal.js plugins
+    				dependencies: [
+    					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+    					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+    					{ src: 'plugin/zoom-js/zoom.js', async: true },
+    					{ src: 'plugin/notes/notes.js', async: true },
+               { src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js', async: true },
+              { src: 'plugin/multiplex/client.js', async: true },
+    				]
+    			});
+  </script>
+
+</body>
+
+</html>

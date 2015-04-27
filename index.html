@@ -107,8 +107,8 @@
             multiplex: {
         // Example values. To generate your own, see the socket.io server instructions.
         secret: null, // null so the clients do not have control of the master presentation'
-        id: '1d8df63c411fa04d', // id, obtained from socket.io server
-        url: 'http://revealjs-historyslides.rhcloud.com:8000' // Location of socket.io server
+        id: 'afbec54831bacfed', // id, obtained from socket.io server
+        url: 'http://revealjs-historyslides.rhcloud.com:80' // Location of socket.io server
     },
 
         transition: 'slide',
@@ -126,6 +126,9 @@
     					{ src: 'plugin/notes/notes.js', async: true },
                { src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js', async: true },
               { src: 'plugin/multiplex/client.js', async: true }
+              { src: 'http://revealjs-historyslides.rhcloud.com/socket.io/socket.io.js', async: true }, 
+{ src: 'plugin/multiplex/client.js', async: true },
+{ src: 'plugin/multiplex/master.js', async: true }
     				]
     			});
   </script>

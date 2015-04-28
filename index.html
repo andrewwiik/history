@@ -33,6 +33,8 @@
 		<![endif]-->
   <style>
     .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {text-transform: none;}
+    .reveal section img {border:none; background:none;
+      box-shadow:none;}
   </style>
 </head>
 
@@ -46,7 +48,6 @@
       <aside class="notes">
       James Madison was the 4th President of the United States, He was born in Virigina...  joking, you guys don't wanna hear that kind of boring biography do you?, I didn't think so..
       </aside>
-      <audio data-autoplay src="audio/open.mp3"></audio>
         <h1 style="font-family: 'Euphoria Script', cursive;">James Madison</h1>
         <h3>4th President of the United States</h3>
         <p>
@@ -95,7 +96,12 @@
       </section>
       <section class="stretch" data-background-video="video/bio.mp4">
       </section>
-      <section data-background="img/James_Madison.jpg">
+      <section>
+      <img class="stretch" src="img/coin.png"></img>
+        
+      </section>
+      <section>
+      <img class="stretch" src="img/jm1.jpg"></img>
         
       </section>
         
@@ -133,7 +139,7 @@
     					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
     					{ src: 'plugin/zoom-js/zoom.js', async: true },
     					{ src: 'plugin/notes/notes.js', async: true },
-               { src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js', async: true },
+               { src: 'http://cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js', async: true },
               { src: 'plugin/multiplex/client.js', async: true },
               { src: 'http://revealjs-historyslides.rhcloud.com/socket.io/socket.io.js', async: true }, 
 { src: 'plugin/multiplex/client.js', async: true }

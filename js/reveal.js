@@ -3706,11 +3706,7 @@
 				var deltaX = currentX - touch.startX,
 					deltaY = currentY - touch.startY;
 
-				if( deltaX > touch.threshold && Math.abs( deltaX ) > Math.abs( deltaY ) ) {
-					touch.captured = true;
-					navigateLeft();
-				}
-				else if( deltaX < -touch.threshold && Math.abs( deltaX ) > Math.abs( deltaY ) ) {
+				if( deltaX < -touch.threshold && Math.abs( deltaX ) > Math.abs( deltaY ) ) {
 					touch.captured = true;
 					navigateRight();
 				}

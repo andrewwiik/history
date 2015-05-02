@@ -126,7 +126,12 @@
       <section>
         <h2>Our Theme Song</h2>
       </section>
-      <section class="stretch" data-background-video="video/bio_noaudio.mp4">
+      <section class="stretch" data-background-video="video/bio_noaudio.mp4, video/bio_noaudio.webm">
+<video   controls="controls" preload="auto" poster="path-to-poster.jpg">
+ <source src="video/bio_noaudio.mp4" type="video/mp4" />
+ <source src="video/bio_noaudio.webm" type="video/webm" />
+ <source src="video/bio_noaudio.ogv" type="video/ogg" />
+ </video>
       </section>
       <section>
         <section>
@@ -170,7 +175,7 @@
 
         mouseWheel: false,
               progress: false,
-              keyboard: false,
+              keyboard: true,
             controls: false,
             touch: false,
             transition: 'convex', // none/fade/slide/convex/concave/zoom

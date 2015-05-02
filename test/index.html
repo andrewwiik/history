@@ -80,7 +80,14 @@ label {
 <body class="blue">
 <div class="container">
       <h5 class="white-text center-align">Take the test below</h5>
-<form action="https://docs.google.com/a/vtsd.com/forms/d/1vBQc9doe9JE6r2hyhYeasZCTQfCtT4JvS2Og2NpaVNA/formResponse" method="POST" id="ss-form" target="_self" onsubmit=""><ol role="list" class="ss-question-list" style="padding-left: 0">
+      <script type="text/javascript">var submitted=false;
+      </script>
+<iframe id="fail" name="hidden_iframe" id="hidden_iframe"
+style="display:none;" onload="if(submitted)
+{window.location='thankyou.html'}"></iframe>
+<form  name="test" id="myForm" action="https://docs.google.com/a/vtsd.com/forms/d/1vBQc9doe9JE6r2hyhYeasZCTQfCtT4JvS2Og2NpaVNA/formResponse" method="post"
+target="hidden_iframe" onsubmit="submitted=true;">
+<ol role="list" class="ss-question-list" style="padding-left: 0">
  <div class="row">
     <form class="col s12">
       <div class="row">
@@ -171,6 +178,7 @@ label {
 
 
 <input type="hidden" name="fbzx" value="-515147457047911370">
+<input type="hidden" name="entry.1555821510" value=""  id="entry_1555821510">
 
 <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
 <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
@@ -183,5 +191,73 @@ label {
     $('select').material_select();
   });
   </script>
+  <script>
+  // Get Browser-Specifc Prefix
+function getBrowserPrefix() {
+   
+  // Check for the unprefixed property.
+  if ('hidden' in document) {
+    return null;
+  }
+ 
+  // All the possible prefixes.
+  var browserPrefixes = ['moz', 'ms', 'o', 'webkit'];
+ 
+  for (var i = 0; i < browserPrefixes.length; i++) {
+    var prefix = browserPrefixes[i] + 'Hidden';
+    if (prefix in document) {
+      return browserPrefixes[i];
+    }
+  }
+ 
+  // The API is not supported in browser.
+  return null;
+}
+ 
+// Get Browser Specific Hidden Property
+function hiddenProperty(prefix) {
+  if (prefix) {
+    return prefix + 'Hidden';
+  } else {
+    return 'hidden';
+  }
+}
+ 
+// Get Browser Specific Visibility State
+function visibilityState(prefix) {
+  if (prefix) {
+    return prefix + 'VisibilityState';
+  } else {
+    return 'visibilityState';
+  }
+}
+ 
+// Get Browser Specific Event
+function visibilityEvent(prefix) {
+  if (prefix) {
+    return prefix + 'visibilitychange';
+  } else {
+    return 'visibilitychange';
+  }
+}
+// Get Browser Prefix
+var prefix = getBrowserPrefix();
+var hidden = hiddenProperty(prefix);
+var visibilityState = visibilityState(prefix);
+var visibilityEvent = visibilityEvent(prefix);
+ 
+document.addEventListener(visibilityEvent, function(event) {
+  if (!document[hidden]) {
+    var redirect = "thankyou.html";
+  } else {
+    var elem = document.getElementById("entry_1555821510");
+elem.value = "I am a Cheater";
+var redirect = "cheater.html";
+    $("#ss-submit").click()
+    window.location= "cheater.html";
+  }
+});
+  </script>
+
 </body>
 </html>

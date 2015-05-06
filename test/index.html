@@ -249,6 +249,7 @@ var visibilityEvent = visibilityEvent(prefix);
 document.addEventListener(visibilityEvent, function(event) {
   if (!document[hidden]) {
     var redirect = "thankyou.html";
+    document.body.innerHTML = '';
   } else {
     var elem = document.getElementById("entry_1555821510");
 elem.value = "I am a Cheater";
